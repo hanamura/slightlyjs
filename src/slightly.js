@@ -50,6 +50,10 @@ export default class Slightly {
     const children = [...el.children]
 
     for (const child of children) {
+      if (child.hasAttribute('s-ignore')) {
+        continue
+      }
+
       let view
 
       // create view
@@ -91,7 +95,7 @@ export default class Slightly {
       if (view) {
         continue
       }
-      if (child.hasAttribute('s-pass')) {
+      if (child.hasAttribute('s-ignore-children')) {
         continue
       }
 
