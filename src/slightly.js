@@ -43,7 +43,7 @@ export default class Slightly {
   $composeDom (el) {}
 
   $remount (el) {
-    const {refs, views} = this._$traverse(this.$el)
+    const {refs, views} = this._$traverse(el)
     mergeRefs(this.$refs, refs)
     this.$views.push(...views)
   }
