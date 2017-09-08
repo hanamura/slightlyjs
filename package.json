@@ -1,0 +1,17 @@
+{
+  "name": "slightlyjs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/slightly.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taro Hanamura <m@hanamurataro.com> (http://hanamurataro.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.5.6"
+  }
+}
