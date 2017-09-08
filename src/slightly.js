@@ -37,12 +37,16 @@ export default class Slightly {
     // init
 
     this.$composeDom(this.$el)
+    this.$remount(this.$el)
+  }
+
+  $composeDom (el) {}
+
+  $remount (el) {
     const {refs, views} = this._$traverse(this.$el)
     mergeRefs(this.$refs, refs)
     this.$views.push(...views)
   }
-
-  $composeDom (el) {}
 
   _$traverse (el) {
     const views = []
