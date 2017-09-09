@@ -1,7 +1,7 @@
 module.exports = {
   entry: './src/slightly.js',
   output: {
-    filename: 'bundle.js'
+    filename: 'lib/slightly.js'
   },
   module: {
     rules: [

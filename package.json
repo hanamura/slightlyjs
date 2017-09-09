@@ -2,9 +2,11 @@
   "name": "slightlyjs",
   "version": "0.1.0",
   "description": "",
-  "main": "src/slightly.js",
+  "main": "lib/slightly.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build",
+    "build": "NODE_ENV=production webpack"
   },
   "author": "Taro Hanamura <m@hanamurataro.com> (http://hanamurataro.com/)",
   "license": "MIT",
@@ -13,5 +15,8 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "webpack": "^3.5.6"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
