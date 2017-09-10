@@ -7,6 +7,19 @@ module.exports = function (config) {
     preprocessors: {
       'test/*.js': ['webpack']
     },
-    singleRun: true
+    singleRun: true,
+    webpack: {
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: [
+              'babel-loader'
+            ]
+          }
+        ]
+      }
+    }
   })
 }
