@@ -7,6 +7,7 @@ module.exports = function (config) {
     preprocessors: {
       'test/*.js': ['webpack']
     },
+    reporters: ['mocha'],
     singleRun: true,
     webpack: {
       module: {
