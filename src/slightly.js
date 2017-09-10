@@ -36,7 +36,11 @@ export default class Slightly {
 
     // init
 
-    this.$composeDom(this.$el)
+    if (this.$el) {
+      this.$composeDom(this.$el)
+    } else {
+      this.$el = this.$composeDom(null)
+    }
     this.$remount(this.$el)
   }
 
