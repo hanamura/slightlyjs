@@ -42,9 +42,12 @@ export default class Slightly {
       this.$el = this.$composeDom(null)
     }
     this.$remount(this.$el)
+    this.$mounted()
   }
 
   $composeDom (el) {}
+
+  $mounted () {}
 
   $remount (el) {
     const {refs, views} = this._$traverse(el)
