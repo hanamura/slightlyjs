@@ -6,11 +6,12 @@
   "scripts": {
     "test": "karma start",
     "prepublishOnly": "npm run build",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production babel src --out-dir lib --source-maps inline"
   },
   "author": "Taro Hanamura <m@hanamurataro.com> (http://hanamurataro.com/)",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
