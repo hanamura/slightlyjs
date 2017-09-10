@@ -29,7 +29,7 @@ const parseRef = ref => {
 export default class Slightly {
   constructor (el, options = null) {
     this.$el = el
-    this.$options = Object.assign({}, options).freeze()
+    this.$options = Object.freeze(Object.assign({}, options))
     this.$components = Object.assign({}, this.$options.components)
     this.$refs = {}
     this.$views = []
