@@ -5,7 +5,7 @@
   "main": "lib/slightly.js",
   "scripts": {
     "test": "karma start",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "build": "NODE_ENV=production webpack"
   },
   "author": "Taro Hanamura <m@hanamurataro.com> (http://hanamurataro.com/)",
