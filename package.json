@@ -26,5 +26,18 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanamura/slightlyjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hanamura/slightlyjs/issues"
+  },
+  "homepage": "https://github.com/hanamura/slightlyjs#readme"
 }
