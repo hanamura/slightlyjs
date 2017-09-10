@@ -6,7 +6,7 @@
   "scripts": {
     "test": "karma start",
     "prepublishOnly": "npm run build",
-    "build": "NODE_ENV=production babel src --out-dir lib --source-maps inline"
+    "build": "rm -rf lib && NODE_ENV=production babel src --out-dir lib --source-maps inline"
   },
   "author": "Taro Hanamura <m@hanamurataro.com> (http://hanamurataro.com/)",
   "license": "MIT",
