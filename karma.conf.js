@@ -4,6 +4,9 @@ module.exports = function (config) {
     browsers: ['Chrome'],
     files: ['test/*.js'],
     frameworks: ['mocha'],
+    preprocessors: {
+      'test/*.js': ['webpack']
+    },
     singleRun: true
   })
 }
