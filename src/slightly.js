@@ -1,3 +1,5 @@
+import assign from 'lodash.assign'
+
 const mergeRefs = (a, b) => {
   for (const name in b) {
     if (name in a) {
@@ -29,8 +31,8 @@ const parseRef = ref => {
 export default class Slightly {
   constructor (el, options = null) {
     this.$el = el
-    this.$options = Object.freeze(Object.assign({}, options))
-    this.$components = Object.assign({}, this.$options.components)
+    this.$options = Object.freeze(assign({}, options))
+    this.$components = assign({}, this.$options.components)
     this.$refs = {}
     this.$views = []
 
@@ -77,7 +79,7 @@ export default class Slightly {
           throw new Error(`No such component: ${name}`)
         }
 
-        view = new component(child, Object.assign({}, this.$options, {_parent: this}))
+        view = new component(child, assign({}, this.$options, {_parent: this}))
         views.push(view)
       }
 
